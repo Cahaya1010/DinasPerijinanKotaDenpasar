@@ -1,0 +1,46 @@
+        :root {
+          --primary: #3498db;
+          --secondary: #f39c12;
+          --dark: #2c3e50;
+          --light: #ecf0f1;
+        }
+
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-brand img {
+          height: 50px;
+        }
+
+        .hero-section {
+          background: linear-gradient(135deg, var(--primary), var(--dark));
+          color: white;
+          padding: 4rem 0;
+        }
+
+        .service-card {
+          transition: transform 0.3s;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .icon-service {
+          font-size: 2.5rem;
+          color: var(--primary);
+        }
+
+        .contact {
+          color: white;
+          transition: color 0.3s;
+        }
+
+        .contact:hover {
+          color: blue;
+        }
+

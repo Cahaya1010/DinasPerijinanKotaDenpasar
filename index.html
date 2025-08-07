@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinas Perizinan Kota Denpasar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo-dinas-perizinan.png" alt="Dinas Perizinan Denpasar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Persyaratan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Regulasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light ms-2" href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Pelayanan Perizinan Kota Denpasar</h1>
+            <p class="lead">Layanan cepat, transparan, dan akuntabel untuk masyarakat Denpasar</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-light btn-lg px-4 me-2">Ajukan Izin</a>
+                <a href="#" class="btn btn-light btn-lg px-4 me-2">Cek Status</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Unggulan -->
+    <section class="py-5" id="layanan-unggulan">
+        <div class="container">
+            <h2 class="text-center mb-5">Layanan Unggulan</h2>
+            <div class="row g-4">
+                <!-- Izin dan Persyaratan -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="icon-service fas fa-file-alt mb-3"></i>
+                            <h4>Izin dan Syaratnya</h4>
+                            <p class="mb-4">Daftar lengkap izin dan persyaratannya</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Daftar Izin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cek Status Izin -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="icon-service fas fa-search mb-3"></i>
+                            <h4>Cek Status Izin</h4>
+                            <p class="mb-4">Lacak status permohonan izin Anda</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Cek Status</a>
+                            <div class="mt-2">
+                                <a href="#" class="small text-muted">Lihat masa berlaku izin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OSS RBA -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="icon-service fas fa-laptop mb-3"></i>
+                            <h4>OSS RBA</h4>
+                            <p class="mb-4">Informasi tentang OSS RBA, NIB, dan KBLI</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Cek OSS RBA</a>
+                            <div class="mt-2">
+                                <a href="#" class="small text-muted">Lihat peraturan/regulasi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jam Operasional -->
+            <div class="alert alert-info mt-5 text-center">
+                <h5 class="alert-heading">Jam Kerja Layanan</h5>
+                <p class="mb-0">
+                    Senin - Kamis: 08.00 - 14.00 WITA<br>
+                    Jumat: 08.00 - 11.00 WITA
+                </p>
+            </div>
+
+            <!-- Chat Assistant -->
+            <div class="text-center mt-4">
+                <h5>Butuh Bantuan?</h5>
+                <p>Gunakan Chat Assistant (Chassie) untuk konsultasi</p>
+                <a href="#" class="btn btn-success">
+                    <i class="fas fa-comment-dots me-2"></i> Chat Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hubungi Kami -->
+    <section class="py-5 bg-light" id="hubungi-kami">
+        <div class="container">
+            <h2 class="text-center mb-4">Kirim Pesan kepada Kami</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="http://localhost/proses.php" method="POST">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap</label>
+                            <input type="text" name="nama" class="form-control" id="nama"
+                                placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telepon" class="form-label">No. Telepon</label>
+                            <input type="tel" name="telepon" class="form-control" id="telepon"
+                                placeholder="Masukkan nomor telepon" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea name="pesan" class="form-control" id="pesan" rows="5"
+                                placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-4">Kirim Pesan</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Dinas Perizinan Kota Denpasar</h5>
+                    <p>Jl. Majapahit No. 1, Denpasar<br>Bali, Indonesia</p>
+                </div>
+                <div class="col-md-4">
+                    <div>Kontak Kami</div>
+                    <p>lokasi : <a class="contact" style="text-decoration: none; cursor: pointer;"
+                            href="https://maps.app.goo.gl/bnxNWupN4emNkeZv8">Graha Sewaka Dharma, Jl. Majapahit,
+                            Lumintang
+                            Denpasar</a></p>
+                    <p>Email : <a class="contact" style="text-decoration: none; cursor: pointer;"
+                            href="mailto:komangadi770@gmail.com">komangadi770@gmail.com</a></p>
+                    <p>WhatsApp : <a class="contact" style="text-decoration: none; cursor: pointer;"
+                            href="https://wa.me/6282146813249">082146813249</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Jam Operasional</h5>
+                    <p>Senin - Jumat: 08.00 - 16.00 WITA<br>
+                        Sabtu: 08.00 - 12.00 WITA</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>© 2022 DPMPTSP Kota Denpasar
+                    All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
